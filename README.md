@@ -36,3 +36,5 @@ Then our output stream would be:
 4	5	6
 7	8	9
 ```
+
+**This is useful when we want to create TSV data. And to create text-based matrices and multi-dimensional arrays.**

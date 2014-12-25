@@ -2,6 +2,12 @@
 
 **redimension** is a command line tool that lets the user transform a something of one dimension to another.
 
+**redimension** is useful when you want to create TSV data.
+
+**redimension&& is also useful when you want to create text-based matrices and multi-dimensional arrays.**
+
+## Usage
+
 For example, consider if we had the input stream:
 ```
 1
@@ -37,4 +43,17 @@ Then our output stream would be:
 7	8	9
 ```
 
-**This is useful when we want to create TSV data. And to create text-based matrices and multi-dimensional arrays.**
+
+## Advanced Usage
+
+If you use **redimension** with [repeat](https://github.com/reiver/repeat) you can create a 3x3 identity matrix with:
+```
+repeat --count=2 --plus=1 1 0 0 0 | redimension --columns=3
+```
+
+Which outputs:
+```
+1       0       0
+0       1       0
+0       0       1
+```
